@@ -1,0 +1,74 @@
+ATTRIBUTE CHARACTERISTICS CHART
+================================
+
+1. DEMOGRAPHIC ATTRIBUTES
+------------------------
+┌─────────────────────┬───────────────┬──────────────┬────────────────────────┬─────────────────┐
+│ Attribute          │ Type          │ Missing (%)  │ Possible Values        │ Business Impact │
+├─────────────────────┼───────────────┼──────────────┼────────────────────────┼─────────────────┤
+│ Marital status     │ Categorical   │ Check data   │ Single, Married, etc.  │ Personal factor │
+│ Age at enrollment  │ Numerical     │ Check data   │ 17-70 years           │ Age impact      │
+│ International      │ Boolean       │ Check data   │ Yes/No                 │ Student type    │
+│ Gender             │ Categorical   │ Check data   │ M/F                    │ Demographics    │
+└─────────────────────┴───────────────┴──────────────┴────────────────────────┴─────────────────┘
+
+2. ACADEMIC BACKGROUND
+---------------------
+┌─────────────────────┬───────────────┬──────────────┬────────────────────────┬─────────────────┐
+│ Attribute          │ Type          │ Missing (%)  │ Possible Values        │ Business Impact │
+├─────────────────────┼───────────────┼──────────────┼────────────────────────┼─────────────────┤
+│ Previous qual.     │ Categorical   │ Check data   │ Various levels         │ Prior education │
+│ Previous grade     │ Numerical     │ Check data   │ Grade scale           │ Academic history│
+│ Admission grade    │ Numerical     │ Check data   │ Admission scores      │ Entry quality   │
+└─────────────────────┴───────────────┴──────────────┴────────────────────────┴─────────────────┘
+
+3. COURSE INFORMATION
+--------------------
+┌─────────────────────┬───────────────┬──────────────┬────────────────────────┬─────────────────┐
+│ Attribute          │ Type          │ Missing (%)  │ Possible Values        │ Business Impact │
+├─────────────────────┼───────────────┼──────────────┼────────────────────────┼─────────────────┤
+│ Course             │ Categorical   │ Check data   │ Course codes          │ Program type    │
+│ Daytime/evening    │ Categorical   │ Check data   │ Day/Evening           │ Schedule type   │
+│ Attendance         │ Numerical     │ Check data   │ Attendance rates      │ Engagement     │
+└─────────────────────┴───────────────┴──────────────┴────────────────────────┴─────────────────┘
+
+4. FAMILY BACKGROUND
+------------------
+┌─────────────────────┬───────────────┬──────────────┬────────────────────────┬─────────────────┐
+│ Attribute          │ Type          │ Missing (%)  │ Possible Values        │ Business Impact │
+├─────────────────────┼───────────────┼──────────────┼────────────────────────┼─────────────────┤
+│ Mother's qual.     │ Categorical   │ Check data   │ Education levels      │ Family education│
+│ Father's qual.     │ Categorical   │ Check data   │ Education levels      │ Family education│
+│ Mother's occupation│ Categorical   │ Check data   │ Occupation types      │ Family status   │
+│ Father's occupation│ Categorical   │ Check data   │ Occupation types      │ Family status   │
+└─────────────────────┴───────────────┴──────────────┴────────────────────────┴─────────────────┘
+
+5. ACADEMIC PERFORMANCE
+---------------------
+┌─────────────────────┬───────────────┬──────────────┬────────────────────────┬─────────────────┐
+│ Attribute          │ Type          │ Missing (%)  │ Possible Values        │ Business Impact │
+├─────────────────────┼───────────────┼──────────────┼────────────────────────┼─────────────────┤
+│ Curricular units   │ Numerical     │ Check data   │ Number of units       │ Course load     │
+│ 1st sem (grade)    │ Numerical     │ Check data   │ Grade scale           │ Performance     │
+│ 2nd sem (grade)    │ Numerical     │ Check data   │ Grade scale           │ Performance     │
+└─────────────────────┴───────────────┴──────────────┴────────────────────────┴─────────────────┘
+
+6. FINANCIAL FACTORS
+------------------
+┌─────────────────────┬───────────────┬──────────────┬────────────────────────┬─────────────────┐
+│ Attribute          │ Type          │ Missing (%)  │ Possible Values        │ Business Impact │
+├─────────────────────┼───────────────┼──────────────┼────────────────────────┼─────────────────┤
+│ Scholarship holder │ Boolean       │ Check data   │ Yes/No                 │ Financial aid   │
+│ Debtor            │ Boolean       │ Check data   │ Yes/No                 │ Financial status│
+│ Tuition up to date│ Boolean       │ Check data   │ Yes/No                 │ Payment status  │
+└─────────────────────┴───────────────┴──────────────┴────────────────────────┴─────────────────┘
+
+7. TARGET VARIABLE
+----------------
+┌─────────────────────┬───────────────┬──────────────┬────────────────────────┬─────────────────┐
+│ Attribute          │ Type          │ Missing (%)  │ Possible Values        │ Business Impact │
+├─────────────────────┼───────────────┼──────────────┼────────────────────────┼─────────────────┤
+│ Target             │ Categorical   │ Check data   │ Dropout/Graduate       │ Final outcome   │
+└─────────────────────┴───────────────┴──────────────┴────────────────────────┴─────────────────┘
+
+Note: The actual missing percentages and possible values will be populated when you run the attribute_analysis.ipynb notebook. 
